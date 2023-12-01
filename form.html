@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+   
+    <script src="https://kit.fontawesome.com/ae20eb4e30.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" type="Screenshot" href="logo_sen.png"> 
+    <title>VR17 Contact Form</title>
+</head> 
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Anonymous Pro', monospace; 
+       
+    } 
+    body{
+        background-color: rgb(12, 13, 14);
+    } 
+    .conte_a{ 
+        margin-top: 45%;
+        width: 400px;
+        height: 500px;
+         transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%; 
+        position: absolute; 
+        margin-bottom: 30%;
+    } 
+    .cir1 , .cir2{
+        height: 150px;
+        width: 150px; 
+        border-radius: 50%;
+        position: absolute;
+    }  
+ 
+    .cir1{
+        background: linear-gradient(rgb(190, 103, 252), white ,rgb(160, 241, 225));
+        left: -80px; 
+        top: -50px;
+    } 
+    .cir2{
+        background: linear-gradient(rgb(160, 241, 225), white ,rgb(190, 103, 252)); 
+        right: -80px; 
+        bottom: -50px;
+
+    }   
+    @media(max-width: 703px){
+       .cir2{
+            display: none;
+       } 
+       
+    }  
+    @media(max-width: 409px){
+     .conte_a{
+        display: flexbox;
+     } 
+     nav{
+        width: 100%;
+     }
+       
+    }  
+    @media(max-width: 355px){
+    
+     nav{
+        width: 100%;
+     }
+       
+    }  
+    @media(max-width: 322px){
+    
+    nav{
+       width: 100%;
+    }
+      
+   } 
+ 
+    form{   
+        display: block; 
+        padding-bottom: 190px;
+        margin-bottom: 40%;
+        margin-top: 45%;
+        height: 500px;
+        width: 400px;
+        background-color: rgba(159, 208, 250, 0.04); 
+        position: absolute; 
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;  
+        border-radius: 20px; 
+        backdrop-filter: blur(10px); 
+        border: 1px double blueviolet; 
+        box-shadow: 0 0 0 5px rgba(198, 225, 249, 0.1);
+    } 
+    form h3{
+        color: aliceblue;
+        letter-spacing: 1px; 
+        font-size: 40px; 
+        padding-top: 10px;
+       margin-left: 25%; 
+       margin-bottom: 20px;
+    } 
+    form span{
+        font-size: 20px; 
+        color: aliceblue; 
+        margin-left: 33%; 
+            
+    } 
+    hr{
+        width: 100%; 
+     margin-top: 10px; 
+     margin-bottom: 25px;
+    }  
+    label{ 
+        margin-top: 30px;
+        color: aliceblue; 
+        font-size: 20px; 
+        margin-left: 20px;
+    }  
+   label,input{
+    margin-bottom: 25px
+   } 
+    input{  
+       
+        background-color: rgb(242, 250, 250); 
+        border-radius: 5px; 
+        font-size: 20px; 
+       
+    }
+  ::placeholder{
+    color: aliceblue;  
+    font-size: 15px;
+  }
+ #q{
+    padding-right: 18px;
+ } 
+ #qa{
+    padding-right: 47px;
+ } 
+ #sug{
+    border-radius: 5px; 
+    width: 64%; 
+    background-color: rgb(85, 88, 88);
+ }  
+ #info_btn{
+    width: 80%;
+    margin-left: 30px; 
+    border-radius: 5px;
+    color: rgb(73, 65, 65);
+    background-color: rgb(186, 201, 201); 
+    padding: 10px;
+    margin-top: 30px; 
+    font-size: 20px;
+    cursor: pointer;
+ }
+#info_btn:hover{
+    background-color: rgb(233, 240, 245); 
+    color: rgb(9, 10, 12); 
+    font-weight: 900;
+}
+nav{
+        width: 100%;
+        height: 80px;
+        background-color: #b2b2fd; 
+        
+    } 
+    label.logo{
+        color: rgb(2, 2, 47); 
+        font-size: 50px;
+        margin-top: 0;
+        margin-left: 40px;
+        background-color: transparent; 
+        line-height: 80px;
+    } 
+    nav ul{
+        float: right; 
+        list-style: none; 
+        background-color: #b2b2fd;
+       
+    } 
+    nav ul li{
+        display: inline-block;
+        line-height: 80px; 
+        background-color: #b2b2fd;
+    } 
+    nav ul li a{
+        text-decoration: none;
+        background-color: #b2b2fd; 
+        color: rgb(45, 93, 109); 
+        font-size: 19px;  
+        border-radius: 5px; 
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 3px;
+        padding-right: 4px;   
+        margin-right: 20px;
+    }
+    nav ul li a:hover{
+        background-color: #2121f5; 
+        color: aliceblue; 
+        border-color:rgb(45, 93, 109) ; 
+        transition: 0.5s;
+    } 
+    .paid_button{
+        padding-left: 15px; 
+        padding-right: 15px;
+    } 
+    #checkbtn{
+        float: right;
+        line-height: 80px;
+        margin-right: 10px;
+        background-color: #b2b2fd; 
+        color: rgb(45, 93, 109);
+        display: none;
+    } 
+    #c{
+        display: none;
+    } 
+    @media(max-width: 623px){
+        #checkbtn{
+            display: block;
+        } 
+        nav ul{
+            width: 100%;
+            height: 50%;       
+            top: 80px;
+            left: -100%; 
+            position: fixed; 
+          
+        } 
+        nav ul li{
+            display: block;   
+            text-align: center;      
+        }
+    }  
+    @media(max-width: 703px){
+        #checkbtn{
+            display: block;
+        } 
+        nav ul{
+            width: 100%;
+            height: 50%;       
+            top: 80px;
+            left: -100%; 
+            position: fixed; 
+        
+        } 
+        nav ul li{
+            display: block;   
+            text-align: center;      
+        }
+    } 
+    #c:checked ~ ul{
+        left: 0; 
+        transition: 1s;  
+        top: 83px; 
+       
+    } 
+    i{
+        margin-right: 40px;
+        background-color: #b2b2fd; 
+        font-size: 25px; 
+        line-height: 80px;
+    } 
+    i:hover{
+        color: blue; 
+        cursor: pointer;
+    } 
+   #vricon{
+    float: right; 
+    font-size: 50px; 
+    color: rgb(45, 93, 109); 
+    margin-top: 2%;
+    margin-right: 6%;
+    } 
+    #x{
+        background: none; 
+        font-size: 30px; 
+        color: white;
+    }  
+    #x:hover{
+        color: blue;
+    }
+#footer_a{
+    margin-top: 30%; 
+    background-color: rgb(206, 202, 202) ; 
+    width: 100%; 
+    padding-top: 20px; 
+    border-radius: 5px; 
+    padding-bottom: 20px;
+} 
+#for_icon{
+    background-color: rgb(206, 202, 202) ; 
+} 
+.link_abc {
+    cursor: pointer; 
+     padding-left: 10px; 
+     padding-right: 10px; 
+     padding-top: 5px; 
+     padding-bottom: 5px; 
+     border-radius: 5px;  
+     border-color: black;  
+     background-color: aliceblue;
+     text-decoration: none;  
+     color: black;   
+     font-size: 17px;
+
+}  
+.link_abc:hover{
+    background-color: rgb(0, 0, 0); 
+    color: aliceblue; 
+} 
+.btn_send_ab:hover{
+    background-color: black; 
+    color: aliceblue;
+}
+.btn_send_ab{
+    padding-top: 5px; 
+  margin-bottom: 10px;
+  margin-top: 10px; 
+  padding-left: 5px;
+  padding-right: 5px; 
+  cursor: pointer;
+    padding-bottom: 5px; 
+    font-size: 17px; 
+} 
+#li_btn_link{ 
+    margin-top: 20px;
+    border: 1px solid white;  
+    width: 40%; 
+    border-radius: 5px; 
+    list-style: none;
+
+} 
+.btn_send_abc{  
+    cursor: pointer;
+    padding-bottom: 5px; 
+   width: 43%; 
+   font-size: 17px;  
+   padding-top: 5px; 
+  margin-bottom: 10px;
+  margin-top: 10px; 
+  padding-left: 5px;
+  padding-right: 5px; 
+}
+</style>
+<body>
+    
+    <section>
+        <nav>  
+            <center>
+           <label class="logo">VR17</label> 
+        </center>
+          
+        </nav> 
+    </section>
+    
+        <div class="conte_a">
+            <div class="cir1"></div> 
+            <div class="cir2"></div>
+        </div> 
+        <form method="post" name="google-sheet"> 
+            <h3>Welcome <a href="./Z_hiden/Password.html"><i id="x" class="fa-solid fa-face-smile"></i></a></h3> 
+            <span>Submit Informatin</span> 
+            <center>
+            <hr>  
+            </center>
+            <center>
+            <label for="username" >Your Name:</label> <br>
+            <input type="text" placeholder=" Enter Your Name"  name="Name"> <br>
+    
+            <label for="email">Your Email:</label> <br>
+            <input type="email" placeholder=" Enter Your Email" name="Email">  <br>
+             
+            <label for="question" id="q">Question:</label> <br>
+            <input type="text" placeholder=" Write Your Question" name="Question"> <br>
+    
+            <label for="need" id="qa">Need:</label> <br>
+            <input type="text" placeholder=" What you Want" name="Need"> <br>
+    
+            <label id="sug_1" for="message">Suggestion:</label>   <br>
+            <textarea name="Suggestion" id="sug" cols="29" rows="3" placeholder="       
+            Suggestion"></textarea> <br> 
+        </center>
+            <center> 
+               <ul>
+                <li id="li_btn_link">
+                    <input class="btn_send_ab" type="reset" value="RESET"> 
+                    <input class="btn_send_ab" type="reset" value="UPDATE"> 
+                   
+                </li>
+               </ul>
+            <input  id="info_btn"  type="submit" value="SEND" name="submit">     
+            
+        </form> 
+      </section>  
+      
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzHPoE9fS_EBQW4NSFZrzF5WqDojG6yQryYIhrE28dv6ZwZyONHrhXxiJ2D9o00XdKv_A/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>

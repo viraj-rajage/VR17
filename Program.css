@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anonymous Pro', monospace; 
+    background-color: rgb(183, 216, 232);  
+    box-sizing: border-box;
+}  
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #b2b2fd; 
+    
+} 
+label.logo{
+    color: rgb(2, 2, 47); 
+    font-size: 50px;
+    margin-top: 0;
+    margin-left: 40px;
+    background-color: transparent; 
+    line-height: 80px;
+} 
+nav ul{
+    float: right; 
+    list-style: none; 
+    background-color: #b2b2fd;
+   
+} 
+nav ul li{
+    display: inline-block;
+    line-height: 80px; 
+    background-color: #b2b2fd;
+} 
+nav ul li a{
+    text-decoration: none;
+    background-color: #b2b2fd; 
+    color: rgb(45, 93, 109); 
+    font-size: 19px;  
+    border-radius: 5px; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 4px;   
+    margin-right: 20px;
+}
+nav ul li a:hover{
+    background-color: #2121f5; 
+    color: aliceblue; 
+    border-color:rgb(45, 93, 109) ; 
+    transition: 0.5s;
+} 
+.paid_button{
+    padding-left: 15px; 
+    padding-right: 15px;
+} 
+#checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    background-color: #b2b2fd; 
+    color: rgb(45, 93, 109);
+    display: none;
+} 
+#c{
+    display: none;
+} 
+@media(max-width: 623px){
+    #checkbtn{
+        display: block;
+    } 
+    nav ul{
+        width: 100%;
+        height: 50%;       
+        top: 80px;
+        left: -100%; 
+        position: fixed; 
+      
+    } 
+    nav ul li{
+        display: block;   
+        text-align: center;      
+    }
+}  
+@media(max-width: 703px){
+    #checkbtn{
+        display: block;
+    } 
+    nav ul{
+        width: 100%;
+        height: 50%;       
+        top: 80px;
+        left: -100%; 
+        position: fixed; 
+    
+    } 
+    nav ul li{
+        display: block;   
+        text-align: center;      
+    }
+} 
+#c:checked ~ ul{
+    left: 0; 
+    transition: 1s;  
+    top: 83px; 
+   
+} 
+i{
+    margin-right: 40px;
+    background-color: #b2b2fd; 
+    font-size: 25px; 
+    line-height: 80px;
+} 
+i:hover{
+    color: blue; 
+    cursor: pointer;
+}  
+.sec_1 h3{
+    text-align: center; 
+    font-size: 30px; 
+    margin-top: 30px; 
+    color: rgb(45, 93, 109); 
+    margin-bottom: 20px;
+}
+.sec_2{ 
+    margin-left: 20px; 
+    margin-right: 20px;
+    border: 5px;
+    border-style: double; 
+    border-color: #8d8df9; 
+    border-radius: 10px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } 
+  .div_1{
+    border-style: double; 
+    border-radius: 5px; 
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    width: 60%; 
+    margin-bottom: 15px;
+  }  
+ 
+  .div_1 a{
+    text-decoration: none; 
+    font-size: 20px; 
+    padding: 4px; 
+    color: blueviolet;
+  } 
+  .div_1 a:hover{
+    background-color: #2525ec; 
+    border-radius: 5px; 
+    padding: 2px; 
+    margin: 2px; 
+    color: white;
+  }
+  .foot h3{
+    background-color: rgb(206, 202, 202); 
+    padding: 10px; 
+    border-radius: 5px;
+ } 
+ .foot h4{
+    background-color: rgb(206, 202, 202); 
+    padding: 10px; 
+    border-radius: 5px; 
+    padding-top: 20px;
+ } 
+ .foot{
+    margin-top: 60px; 
+    margin-bottom: 5px; 
+    border-radius: 5px;
+ } 
+ #for_icon{
+    background-color: rgb(206, 202, 202);  
+    color: rgb(54, 4, 255);
+    
+ } 
+ ul li{
+    background-color: rgb(206, 202, 202);   
+ } 
+ #for_icon:hover{
+    color: rgb(229, 12, 48);
+ } 
+ #pro_icon{
+    background-color: rgb(183, 216, 232);  
+    color: blueviolet; 
+    margin-bottom: 30px; 
+    margin-top: 20px; 
+    border-style: double; 
+    border-radius: 5px; 
+    padding: 5px;
+ } 
+ #pro_icon:hover{
+    background-color: #2525ec; 
+    color: azure;
+ }
+#pro_link{
+    margin: auto; 
+   
+}
